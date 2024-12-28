@@ -1,6 +1,10 @@
 import React from "react";
 
 const StartGame = () => {
+  const playNow = () => {
+    alert(`Lets Begin the game All the best`);
+    console.log(`Game Started`);
+  };
   return (
     <div className="overscroll-none">
       <div className="box-border border-2 border-black p-[7%] ] mt-[7%] ml-[12%] mr-[12%]">
@@ -13,7 +17,10 @@ const StartGame = () => {
               DICE GAME
             </h1>
 
-            <button className="ml-[55%] mt-[14%] bg-black text-white p-3 w-[65%] rounded-lg">
+            <button
+              onClick={playNow}
+              className="ml-[55%] mt-[14%] bg-black text-white p-3 w-[65%] rounded-lg"
+            >
               PlayNow
             </button>
           </div>
