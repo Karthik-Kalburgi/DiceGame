@@ -2,9 +2,9 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='relative'>
         <div>
-            <nav className='bg-emerald-300 p-0.5  '>
+            <nav className='bg-emerald-300 p-0.5   '>
                 <ul className='display flex gap-10 justify-end'>
                     <li>Home</li>
                     <li>About</li>

@@ -1,9 +1,10 @@
 import React from "react";
 
-const StartGame = () => {
+const StartGame = ({toggle}) => {
   const playNow = () => {
     alert(`Lets Begin the game All the best`);
     console.log(`Game Started`);
+    toggle();
   };
   return (
     <div className="overscroll-none">
@@ -17,9 +18,9 @@ const StartGame = () => {
               DICE GAME
             </h1>
 
-            <button
+            <button 
               onClick={playNow}
-              className="ml-[55%] mt-[14%] bg-black text-white p-3 w-[65%] rounded-lg"
+              className="ml-[55%] mt-[14%] bg-black text-white p-3 w-[65%] rounded-lg    "
             >
               PlayNow
             </button>
